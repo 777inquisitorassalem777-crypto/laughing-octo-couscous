@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_PVSData: {fileID: 0}
+  m_QueryMode: 1
+  m_LightingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 10
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientEquatorColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
+  m_AmbientGroundColor: {r: 0.05, g: 0.05, b: 0.05, a: 1}
+  m_AmbientIntensity: 1
+--- !u!1 &1000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_Name: LivingNPCClient
+  m_IsActive: 1
+  m_Component:
+  - component: {fileID: 1001}
+  - component: {fileID: 1002}
+--- !u!4 &1001
+Transform:
+  m_ObjectHideFlags: 0
+  m_GameObject: {fileID: 1000}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+--- !u!114 &1002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_GameObject: {fileID: 1000}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 00000000000000000000000000000001, type: 3}
+  m_Name: LivingNpcClient
+  baseUrl: http://127.0.0.1:8000
+--- !u!1 &1100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_Name: WorldStreamDemo
+  m_IsActive: 1
+  m_Component:
+  - component: {fileID: 1101}
+  - component: {fileID: 1102}
+--- !u!4 &1101
+Transform:
+  m_ObjectHideFlags: 0
+  m_GameObject: {fileID: 1100}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+--- !u!114 &1102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_GameObject: {fileID: 1100}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 00000000000000000000000000000002, type: 3}
+  m_Name: WorldStreamDemo
+  interval: 0.5
+--- !u!1 &1200
+GameObject:
+  m_ObjectHideFlags: 0
+  m_Name: Alice
+  m_IsActive: 1
+  m_Component:
+  - component: {fileID: 1201}
+  - component: {fileID: 1202}
+--- !u!4 &1201
+Transform:
+  m_ObjectHideFlags: 0
+  m_GameObject: {fileID: 1200}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+--- !u!114 &1202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_GameObject: {fileID: 1200}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 00000000000000000000000000000003, type: 3}
+  m_Name: NpcController
+  npcId: alice
+--- !u!1 &1300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_Name: Main Camera
+  m_IsActive: 1
+  m_Component:
+  - component: {fileID: 1301}
+--- !u!4 &1301
+Transform:
+  m_ObjectHideFlags: 0
+  m_GameObject: {fileID: 1300}
+  m_LocalPosition: {x: 0, y: 2, z: -8}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+--- !u!1 &1400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_Name: Directional Light
+  m_IsActive: 1

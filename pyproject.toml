@@ -1,0 +1,8 @@
+[project]
+name = "living-npc-platform"
+version = "0.2.0"
+description = "Persistent living NPC architecture for games and simulations"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
